@@ -186,7 +186,7 @@ def main():
                                     else:
                                         if choix == 9:
                                             choix = 0
-                                            for i in range(len(liste_projet):
+                                            for i in range(len(liste_projet)):
                                                 print("________________________________________")
                                                 print("- Projet -")
                                                 print("Numero projet: ", liste_projet[i].getNumProjet())

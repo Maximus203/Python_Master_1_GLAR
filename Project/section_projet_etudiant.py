@@ -186,29 +186,20 @@ def main():
                                     else:
                                         if choix == 9:
                                             choix = 0
-                                            bad = True
-                                            numProjet = 0
-                                            while bad:
-                                                numProjet = int(input("Numero du projet de l'etudiant? "))
-                                                for i in range(len(liste_projet)):
-                                                    if liste_projet[i].getNumProjet() == numProjet:
-                                                        bad = False
-                                                        break
-                                                if bad:
-                                                    print("--- Numero inexistant !!! ---")
-                                            for i in range(len(liste)):
-                                                if numProjet == liste[i].getProjet().getNumProjet():
-                                                    print("________________________________________")
-                                                    print("Numero etudiant: ", liste[i].getNumEtudiant())
-                                                    print("Nom: ", liste[i].getNom())
-                                                    print("Prenom: ", liste[i].getPrenom())
-                                                    print("- Section -")
-                                                    print("Numero section: ", liste[i].getSection().getNumSection())
-                                                    print("Nom section: ", liste[i].getSection().getNomSection())
-                                                    print("- Projet -")
-                                                    print("Numero projet: ", liste[i].getProjet().getNumProjet())
-                                                    print("Theme: ", liste[i].getProjet().getTheme())
-                                                    print()
+                                            for i in range(len(liste_projet):
+                                                print("________________________________________")
+                                                print("- Projet -")
+                                                print("Numero projet: ", liste_projet[i].getNumProjet())
+                                                print("Theme: ", liste_projet[i].getTheme())
+                                                for j in range(len(liste)):
+                                                    if liste_projet[i].getNumProjet() == liste[j].getProjet().getNumProjet():
+                                                        print("Numero etudiant: ", liste[j].getNumEtudiant())
+                                                        print("Nom: ", liste[j].getNom())
+                                                        print("Prenom: ", liste[j].getPrenom())
+                                                        print("- Section -")
+                                                        print("Numero section: ", liste[j].getSection().getNumSection())
+                                                        print("Nom section: ", liste[j].getSection().getNomSection())
+                                                        print()
                                             print("________________________________________")
     print("----------- Fin du programme -----------")
 
